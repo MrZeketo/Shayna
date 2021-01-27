@@ -1,0 +1,112 @@
+<template>
+        <!-- Women Banner Section Begin -->
+    <section class="women-banner spad">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <carousel class="product-slider" :nav='false' :margin=25 :autoplay='false' >
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="img/products/product-3.jpg" style="height:464px" alt="" />
+                                <ul>
+                                    <li class="w-icon active">
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                    </li>
+                                    <li class="quick-view">
+                                       <router-link to="/product">+ Quick View</router-link></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="catagory-name">Coat</div>
+                                <router-link to="/product">
+                                    <h5>Pure Pinnaple </h5>
+                                </router-link>
+                                <div class="product-price">
+                                    $14.00
+                                    <span>$35.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="img/products/women-2.jpg" alt="" />
+                                <ul>
+                                    <li class="w-icon active">
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                    </li>
+                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="catagory-name">Sweater</div>
+                                <a href="#">
+                                    <h5>Guangzhou sweater</h5>
+                                </a>
+                                <div class="product-price">
+                                    $13.00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="img/products/women-3.jpg" alt="" />
+                                <ul>
+                                    <li class="w-icon active">
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                    </li>
+                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="catagory-name">Coat</div>
+                                <a href="#">
+                                    <h5>Sweet Cloud</h5>
+                                </a>
+                                <div class="product-price">
+                                    $34.00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="img/products/women-4.jpg" alt="" />
+                                <ul>
+                                    <li class="w-icon active">
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                    </li>
+                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <li class="w-icon">
+                                        <a href="#"><i class="fa fa-random"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="catagory-name">Shoes</div>
+                                <a href="#">
+                                    <h5>Converse Shoes</h5>
+                                </a>
+                                <div class="product-price">
+                                    $34.00
+                                </div>
+                            </div>
+                        </div>
+                    </carousel>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Women Banner Section End -->
+</template>
+
+<script>
+    import carousel from 'vue-owl-carousel'
+
+    export default {
+    name: 'WomanShayna',
+    components: {
+        // HelloWorld
+        carousel
+        }
+    }
+</script>
+
